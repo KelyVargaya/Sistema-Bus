@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema BUSS</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<h1 align="center">RESERVA DE PASAJES</h1>
+	 <div class = "contenido">
+
+  <table>
+  <br></>
+    <tr>
+       <td >4</td><td >8</td><td >12</td><td >16</td><td >20</td><td>24</td><td>28</td><td >32</td>
+    </tr>
+
+    <tr>
+      <td >3</td><td>7</td><td>11</td><td >15</td><td>19</td><td>23</td><td>27</td><td>31</td>
+    </tr>
+
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+    <tr>
+      <td>2</td><td>6</td><td>10</td><td>14</td><td >18</td><td >22</td><td >26</td><td >30</td>
+    </tr>
+
+    <tr>
+    <td>1</td><td>5</td><td >9</td><td>13</td><td>17</td><td>21</td><td >25</td><td>29</td>
+    </tr>
+  </table>
+
+</div>
+
+
+
+<div class="buscador" align="center">
+<h1>BUSCADOR</h1>
+ <br><p>Ingrese DNI</p>
+ 	 <input type="text" name="dni">
+  	 <button id="buscar" onclick= "buscar()">Buscar</button><br>
+ 	 <br><br>
+ </div>
+
+
+<div class="formulario" align="center">
+	<h1  align="center">Reserva de Asientos</h1>
+	<p align="center" ="center"> Asiento Nro: </p>
+<div id ="mostrar" > <br>
+
+</div>
+
+  	<label for="nombreUsuario" class="nombre">Ingrese Nombre</label>
+  <input type="text" id="nombre" placeholder="Ingresa nombre"><br><br>
+   	<label for="apellidoeUsuario" class="nombre">Ingrese Apellido</label>
+  <input type="text" id="apellido" placeholder="Ingresa apellido"><br><br>
+  	<label for="dniUsuario" class="nombre">Ingrese DNI</label>
+  <input type="number" id="dni" placeholder="Ingresa DNI"><br><br>
+
+   <button  id="botones" onclick = "reservar()"> Reservar</button>
+   <button  id= "botones" onclick="cancelar()"> Cancelar</button>
+   <button  id= "botones" onclick="listar()"> Listar</button>
+  </div><br>
+
+  <div id="resultado">
+  	
+  </div>
+  <script src=" js/main.js"></script>
+</body>
+</html>
